@@ -1,1 +1,1 @@
-# biomeX
+# BiomeX
