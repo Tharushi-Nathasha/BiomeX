@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SplashScreen.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.ico"> <!--web icon-->
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop class="video-background">
+            <source src="Images/forest.mp4" type="video/mp4">
+        </video>
+       
+
+        <div class="row">
+            <div class="col">
+                <!--Topic and mission-->
+                <h1>Life on Land</h1>
+                <p>" Our mission is to promote awareness and appreciation of <br> life on land by providing accessible and engaging educational resources,<br> inspiring individuals to take action towards conservation and sustainable practices,<br> and fostering a global community dedicated to preserving terrestrial ecosystems for future generations "</p>
+            </div>
+            <div class="col">
+                <!--Indicated the group member names within a picture card-->
+                <div class="card card1">
+                    <h5>Student 1</h5>
+                    <p>Tharushi Nathasha</p>
+                </div>
+
+                <div class="card card2">
+                    <h5>Student 2</h5>
+                    <p>Vihari Ambegoda</p>
+                </div>
+
+                <div class="card card3">
+                    <h5>Student 3</h5>
+                    <p>Lochana Methsiluni</p>
+                </div>
+
+                <div class="card card4">
+                    <h5>Student 4</h5>
+                    <p>Dulansa Navindee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loader Element -->
+    <div class="loader"></div>
+
+    <script>
+        // Redirect after 4 seconds
+        setTimeout(function(){
+            window.location.href = "Home.html"; 
+        }, 4000); // 4000 milliseconds = 4 seconds
+    </script>
+</body>
+</html>

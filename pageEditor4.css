@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  rgba(3, 20, 10, 0.966);
+    background-image: url(pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.personalheading{
+    padding: 30px;
+    background-color: #193a0be5;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 500px;
+    text-align: center;
+    color: rgb(231, 231, 231);
+    
+}
+.tasks{
+    float: left;
+    padding: 20px;
+    background-color: rgba(2, 34, 13, 0.979);
+    margin-left: 50px;
+    border-radius: 20px;
+    text-align: left;
+    color: rgb(231, 231, 231);
+    width: 50%;
+    height: auto;
+    font-size: large;
+}
+.content{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+}
+.content:hover{
+    text-decoration: underline rgb(117, 48, 48) 3px;
+    cursor: pointer;
+}

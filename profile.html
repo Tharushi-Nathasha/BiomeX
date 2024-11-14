@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and external resources -->
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.ico"> <!--web icon-->
+    <link rel="stylesheet" href="headerFooter.css"> <!--shared style-->
+
+
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar"> 
+        <img src="pics/logo.jpg" alt="logo" class="logo"/> 
+         <div class="nav-link"> 
+            <ul> 
+                <li><a href="home.html" class="current_page">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="shop.html">Shop</a></li> 
+                <li><a href="profile.html">UserProfile</a></li>  
+                <li><a href="feedback.html">Feedback</a></li> 
+                <li><a href="sitemap.html">Sitemap</a></li> 
+                <li><a href="team.html">Team</a></li> 
+            </ul> 
+        </div> 
+    </nav>
+    <div class="container">
+        <div id="glassbox">
+            <div class="cover">
+                <progress id="progressBar" max="100" value="0"></progress>
+                <!-- Modal for user input -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <p id="questionText">
+                        <div class="modal-input">
+                            <input type="text" id="inputField">
+                            <button onclick="handleResponse('Next')" class="next">Next</button>
+                            <button onclick="handleResponse('Skip')" class="skip">Skip</button>
+                            <button onclick="handleResponse('Back')" class="back">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container1" style="display: none;">
+        <!-- Output section for displaying user input -->
+        <div class="output-box"> 
+            <div class="output-text">
+
+
+                <p>1. Please enter your full name:
+                    <span id="answer1"></span>
+                </p>
+
+                <p>2. What is your date of birth?
+                    <span id="answer2"></span>
+                </p>
+
+                <p>3. What is your gender? 
+                    <span id="answer3"></span>
+                </p>
+
+                <p>4. Enter your country/city:
+                    <span id="answer4"></span>
+                </p>
+
+                <p>5. Please enter your email:
+                    <span id="answer5"></span>
+                </p>
+
+                <p>6. Are you interested in environmental conservation and sustainability efforts? (Yes/No)
+                    <span id="answer6"></span>
+                </p>
+
+                <p>7. Do you participate in any activities related to protecting biodiversity and ecosystems?
+                    <span id="answer7"></span>
+                </p>
+
+                <p>8. Have you volunteered for any wildlife conservation projects or habitat restoration initiatives?
+                    <span id="answer8"></span>
+                </p>
+
+                <p>9. Are you involved in any community gardening or urban greening initiatives?
+                    <span id="answer9"></span>
+                </p>
+
+
+                <p>10. What types of environmental issues are you most passionate about?
+                    <span id="answer10"></span>
+                </p>
+
+                <p>11. Do you have specific preferences or ideas for how to address challenges related to "Life on Land"?
+                    <span id="answer11"></span>
+                </p>
+
+                <p>12. Are there specific actions you plan to take to contribute to land conservation and ecosystem protection?
+                    <span id="answer12"></span>
+                </p>
+
+                <p>13.Do you have any relevant skills or expertise in areas such as forestry, wildlife conservation, sustainable agriculture, or land use planning?
+                    <span id="answer13"></span>
+                </p>
+
+                <p>14. Have you received any awards or recognitions for your contributions to
+                    protecting life below water :
+                    <span id="answer14"></span>
+                </p>
+
+                <p>15. Have you received any awards or recognitions for your contributions to
+                    protecting life below water :
+                    <span id="answer15"></span>
+                </p>
+
+                <p id="feedback"><b>Submitted successfully ! Thankyou !</b></p>
+
+            </div>
+        </div>
+    </div><br><br><br>
+
+<!--footer-->
+<footer>
+    <div class="footercontainer">
+        <div class="footerDes">
+            <p> Just stop and think ..... </p><br>
+            <p>" We are on Earth to take care of life.<br> We are on Earth to take care of each other. "</p>
+        </div>
+        <br>
+        <hr> <br>
+        <div class="main">
+            <div class="socials">
+                <p>Find us here</p>
+                <ul class="footerul">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="pictures/facebook.png"
+                                alt="facebook" class="icons" width="30" height="30"></a>
+                        <a href="https://mail.google.com" target="_blank"><img src="pictures/email.png" alt="email"
+                                class="icons" width="30" height="30"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="pictures/instagram.png"
+                                alt="instagram" class="icons" width="30" height="30"></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="pictures/linkedin.png"
+                                alt="linkedin" class="icons" width="30" height="30"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerNav">
+                <ul class="footerul">
+                    <li><a href="home.html" class="current_page">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <a href="pageEditor4.html" id="pageEditor">Page Editor</a>
+
+        </div>
+        <br>
+        <div class="footerBottom">
+            <p> Copy right &copy; 2024
+
+            </p>
+
+        </div>
+    </div>
+</footer>
+
+    <script src="profile.js"></script>
+    <script>
+        startPrompt();
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="gallery.css"> <!--link css file-->
+    <link rel="icon" type="image/x-icon" href="pictures/logo.ico"> <!--web icon-->
+    <link rel="stylesheet" href="headerFooter.css"> <!--shared style-->
+
+    
+</head>
+
+<body>
+    <!--background video-->
+    <video autoplay muted loop>
+        <source src="pictures/background.mp4" type="video/mp4">
+    </video>
+    <!--navigation bar-->
+    <nav class="navbar">
+        <img src="pictures/logo.jpg" alt="logo" class="logo">
+        <div class="nav-link">
+            <ul>
+                <li><a href="home.html" class="current_page">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">UserProfile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--heading-->
+    <div class="heading">
+        <p>GALLERY</p>
+    </div>
+
+    <!--Gallery Images and their relevant descriptions-->
+    <div class="thumbnails">
+        <div class="images">
+            <h1 style="opacity: 0.8;">The Targets </h1>
+
+            <br><br>
+            <div class="image">
+                <img id="img1" src="pictures/15.1.jpeg" alt="Conservation of Terrestrial and Inland Water Ecosystems" onmousedown="display(this);">
+                <div id="des1">
+                    <h3>Target 15.1 - Conservation of Terrestrial and Inland Water Ecosystems</h3>
+                    <p>
+                        Protected areas, such as national parks, wildlife reserves, and marine sanctuaries, serve as
+                        crucial bastions for biodiversity conservation. These designated zones safeguard a wide array of
+                        terrestrial and aquatic ecosystems, providing habitats for countless species of plants and
+                        animals. They also play a vital role in preserving ecosystem services, maintaining genetic
+                        diversity, and supporting sustainable livelihoods for local communities.
+                    </p><br>
+                    <p><a class="links" href="https://www.iucn.org/" target="_blank">Read More</a> </p>
+                </div>
+            </div>
+
+
+            <div class="image">
+                <img id="img2" src="pictures/15.2.jpeg" alt="Sustainable Forest Management and Reforestation" onmousedown="display(this);">
+                <div id="des2">
+                    <h3>Target 15.2 - Sustainable Forest Management and Reforestation</h3>
+                    <p>
+                        Reforestation initiatives are essential for reversing deforestation trends, restoring degraded
+                        landscapes, and mitigating the impacts of climate change. By planting native tree species,
+                        implementing sustainable forestry practices, and restoring natural habitats, these efforts
+                        contribute to the regeneration of forest ecosystems. Sustainable forest management ensures the
+                        long-term health and resilience of forests, while also providing economic opportunities for
+                        communities dependent on forest resources.
+                    </p><br>
+                    <p><a class="links" href="https://www.reforestationworld.org/" target="_blank">Read More</a> </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img id="img3" src="pictures/15.3.jpeg" alt="Combat Desertification, Restore Degraded Land, and Soil" onmousedown="display(this);">
+                <div id="des3">
+                    <h3>Target 15.3 - Combat Desertification, Restore Degraded Land, and Soil</h3>
+                    <p>
+                        Soil conservation is critical for combating desertification, preserving fertile land, and
+                        ensuring food security for future generations. Techniques such as terracing, mulching, and
+                        agroforestry help prevent soil erosion, improve soil fertility, and enhance water retention
+                        capacity. By restoring degraded land and promoting sustainable land management practices, soil
+                        conservation efforts contribute to the resilience of ecosystems and the well-being of rural
+                        communities.
+                    </p><br>
+                    <p><a class="links" href="https://www.fao.org/soils-portal/en/" target="_blank">Read More</a> </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Extended view with colour and font changable feature-->
+        <div class="largeImage">
+            <div class="color">
+                <span id="close-icon">close X</span>
+                <form>
+                    <label for="color">Background colour : </label>
+                    <select name="Colour" id="color" onclick="backgroundchange(this);">
+                        <option value="rgb(0, 0, 0, 0.918)" selected>Default Colour </option>
+                        <option value="rgba(29, 18, 6, 0.950)">Brown</option>
+                        <option value="rgb(28, 46, 12, 0.940)">Green</option>
+                        <option value="rgba(20, 3, 3, 0.935)">Dark brown</option>
+                    </select>
+                </form>
+            </div>
+            <div class="font">
+                <form>
+                    <label for="font">Font : </label>
+                    <select name="Font" id="font" onclick="fontchange(this);">
+                        <option value="'Times New Roman', Times, serif" selected>Default Font </option>
+                        <option value="Calibri">Calibri</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                </form>
+            </div>
+            <div id="description"></div>
+            <img id="expandedImage" src="#" alt="Image">
+        </div>
+
+    </div>
+
+    <div class="thumbnails">
+        <div class="images">
+            <div class="image">
+                <img id="img4" src="pictures/15.4.jpeg" alt="Conservation of Mountain Ecosystems" onmousedown="display(this);">
+                <div id="des4">
+                    <h3>Target 15.4 - Conservation of Mountain Ecosystems</h3>
+                    <p>
+                        Mountain ecosystems are characterized by rich biodiversity and unique species adapted to
+                        high-altitude environments. These ecosystems provide essential ecosystem services, including
+                        freshwater provision, carbon sequestration, and cultural significance for mountain communities.
+                        Conservation efforts focused on mountain biodiversity aim to protect endemic species, preserve
+                        fragile habitats, and address the impacts of climate change, such as glacial retreat and altered
+                        precipitation patterns.
+                    </p><br>
+                    <p><a class="links" href="https://www.fao.org/mountain-partnership/en/" target="_blank">Read
+                            More</a> </p>
+                </div>
+            </div>
+
+
+            <div class="image">
+                <img id="img5" src="pictures/15.5.jpeg" alt="Halting Biodiversity Loss" onmousedown="display(this);">
+                <div id="des5">
+                    <h3>Target 15.5 - Halting Biodiversity Loss</h3>
+                    <p>
+                        The loss of biodiversity poses a significant threat to ecosystems and human well-being
+                        worldwide. Conservation efforts targeting endangered species aim to prevent extinction, restore
+                        populations, and conserve their habitats. By addressing the root causes of biodiversity loss,
+                        such as habitat destruction, poaching, and climate change, these initiatives contribute to the
+                        preservation of ecosystems, genetic diversity, and ecological balance.
+                    </p><br>
+                    <p><a class="links" href="https://www.iucnredlist.org/" target="_blank">Read More</a> </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img id="img6" src="pictures/15.6.jpeg" alt="Combat Poaching and Trafficking of Protected Species" onmousedown="display(this);">
+                <div id="des6">
+                    <h3>Target 15.6 - Combat Poaching and Trafficking of Protected Species</h3>
+                    <p>
+                        Poaching and illegal trafficking of wildlife pose grave threats to biodiversity, ecosystem
+                        integrity, and global security. Anti-poaching efforts involve law enforcement, community
+                        engagement, and international cooperation to combat wildlife crime. By disrupting poaching
+                        networks, raising awareness, and strengthening legal frameworks, these initiatives aim to
+                        protect endangered species, preserve their habitats, and ensure the sustainable use of natural
+                        resources.
+                    </p><br>
+                    <p><a class="links" href="https://www.traffic.org/" target="_blank">Read More</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="footercontainer">
+            <div class="footerDes">
+                <p> Just stop and think ..... </p><br>
+                <p>" We are on Earth to take care of life.<br> We are on Earth to take care of each other. "</p>
+            </div>
+            <br>
+            <hr> <br>
+            <div class="main">
+                <div class="socials">
+                    <p>Find us here</p>
+                    <ul class="footerul">
+                        <li><a href="https://www.facebook.com" target="_blank"><img src="pictures/facebook.png"
+                                    alt="facebook" class="icons" width="30" height="30"></a>
+                            <a href="https://mail.google.com" target="_blank"><img src="pictures/email.png" alt="email"
+                                    class="icons" width="30" height="30"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com" target="_blank"><img src="pictures/instagram.png"
+                                    alt="instagram" class="icons" width="30" height="30"></a>
+                            <a href="https://www.linkedin.com" target="_blank"><img src="pictures/linkedin.png"
+                                    alt="linkedin" class="icons" width="30" height="30"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footerNav">
+                    <ul class="footerul">
+                        <li><a href="home.html" class="current_page">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+                <a href="pageEditor4.html" id="pageEditor">Page Editor</a>
+
+            </div>
+            <br>
+            <div class="footerBottom">
+                <p> Copy right &copy; 2024
+
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!--link javascript-->
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="pic/logo.ico">  <!--web icon-->
+    <style>
+        .error {
+            color: red;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="pic/logo.jpg" alt="" class="logo"/>
+         <div class="nav-link">
+            <ul type="none"> 
+                <li><a href="home.html" class="current_page">Home</a></li>  
+                <li><a href="gallery.html">Gallery</a></li>   
+                <li><a href="shop.html">Shop</a></li> 
+                <li><a href="profile.html">Userprofile</a></li>   
+                <li><a href="fedbackform.html">Feedback</a></li>   
+                <li><a href="sitemap.html">Sitemap</a></li>  
+                <li><a href="team.html">Team</a></li>   
+            </ul>  
+         </div>
+     </nav>
+
+
+    <div class="content">
+    <fieldset>
+    <div class="container">
+        <h2>Feedback Form</h2> <br>
+        <h3 style="color: red;">Required fields*</h3> <br>
+
+        <form id="feedbackForm" action="#">
+            <label for="fname">*Enter your name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter names here" required> 
+            <span class="error" id="fnameError"></span> <br> <br>
+            
+            <label for="email">*Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email here" required> 
+            <span class="error" id="emailError"></span> <br> <br>
+
+            <div class="visiting">
+                <p> Was this your first time visiting? </p>
+                <input type="radio" name="Yes/No" id="Yes" value="Yes" required>
+                <label for="Yes"> Yes </label>
+
+                <input type="radio" name="Yes/No" id="No" value="No" required>
+                <label for="No"> No </label>
+
+
+            </div>
+
+            <div>
+                <p> Was this website informative and easy to navigate through?</p>
+                <input type="radio" name="Yes/No" id="Yes" required>
+                <label for="Yes"> Yes </label>
+
+                <input type="radio" name="Yes/No" id="N0" required>
+                <label for="No"> No </label>
+ 
+                <br> <br>
+            </div>
+
+            <div>
+                <p>*If "No", suggest any improbements for the future: </p>
+                <textarea name="suggest" id="suggest" placeholder="Add you message here" required> Add you message here </textarea>
+
+                <br> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">How satisfied are you with Our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</label>
+                <select id="satisfaction" name="satisfaction">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+            </div>
+                
+                <br> <br>
+                
+
+            </div>
+
+            <div>
+                <div>
+                    <p>would you recommend our services?</p>
+                    <input type="radio" name="Yes/No" id="Yes" required>
+                    <label for="Yes"> Yes </label>
+    
+                    <input type="radio" name="Yes/No" id="N0" required>
+                    <label for="No"> No </label>
+                    <br> <br>
+                </div>
+            </div>
+
+            <div>
+                <p>*would you like to receive updates about the website and any offers?</p>
+                <select name="" id="" required>
+                    <option value="email" > Yes- via Email </option>
+                </select>
+            </div>
+            <br> <br>
+
+            <div>
+                <p> Do you have any additional questions or requests? </p>
+                <textarea name="suggest" id="suggest" placeholder="Add you message here"> Add you message here</textarea>
+            </div>
+            <br> <br>
+
+            <div class="buttons">
+                <button type="button" id="previewBtn">Preview</button>
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+            <br>
+
+            <div id="thankYouMessage" style="display: none;">
+                <p>Thank you for your feedback!</p>
+            </div>
+        </form>
+
+    </div>
+</fieldset>
+</div>
+
+    
+
+        <footer> 
+            <div class="footercontainer"> 
+                <div class="footerDes"> 
+                    <p> Just stop and think</p><br> 
+                    <p>" We are on Earth to take care of life.<br> We are on Earth to take care of each other. "</p> 
+                </div> 
+            </div>
+        </footer>
+
+
+    </div>
+    <br> <br>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Thank you for your feedback!</h2>
+          <p>We appreciate your input. Your feedback helps us improve our services.</p>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById("myModal");
+            var form = document.getElementById("feedbackForm");
+    
+
+            function validateForm() {
+                var inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+                var isValid = true;
+    
+                inputs.forEach(function(input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                        input.nextElementSibling.innerText = 'This field is required';
+                    } else {
+                        input.nextElementSibling.innerText = ''; 
+                    }
+                });
+    
+                return isValid;
+            }
+    
+
+            function submitForm(event) {
+                event.preventDefault(); 
+    
+                if (validateForm()) {
+                    modal.style.display = "block";
+                    form.reset(); 
+                }
+            }
+    
+            form.addEventListener('submit', submitForm); 
+    
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+    
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
+    
+    
+
+</body>
+</html>

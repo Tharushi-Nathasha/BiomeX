@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 280px;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-size:400%;
+    text-shadow:blanchedalmond;
+    background-color:  rgb(2, 19, 9);
+}
+
+svg{
+    width:100%;
+    height:auto;
+}
+
+.sitemap{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    height:fit-content;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(1, 6, 27, 0.959);
+    overflow-x: auto;
+}
+rect{
+    stroke: rgb(196, 189, 189); 
+    stroke-width: 2;
+    
+}
+text{
+    font-size: 30px;
+    fill: rgb(0, 0, 0);
+}
+.group:hover rect{
+    transition: 0.1s;
+    fill: rgba(1, 9, 44, 0.76);
+    
+}
+
+.group:hover text{
+    fill: rgba(20, 12, 92, 0.842);
+}
+
+
+body{
+    background-color: rgba(3, 34, 16, 0.918);
+    color: white;
+}

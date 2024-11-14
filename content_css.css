@@ -1,0 +1,307 @@
+/* body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation*/
+.navbar { 
+    overflow: hidden; 
+    background-color: #333333cb; 
+    position: fixed; 
+    top: 0; 
+    height: 70px; 
+    width: 100%; 
+    display: flex; 
+    padding: 2% 6%; 
+    justify-content: space-between; 
+    align-items: center; 
+     
+} 
+ 
+.navbar a { 
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+     
+ 
+} 
+ 
+.navbar a:hover { 
+    background-color: #ddd; 
+    color: black; 
+} 
+ 
+/* logo */
+.logo{ 
+    cursor: pointer; 
+    height: 60px; 
+    width: 135px; 
+    margin-left:-50px; 
+    border-radius: 10%; 
+} 
+ 
+.nav-link{ 
+    flex:1; 
+    text-align:right; 
+} 
+ 
+.nav-link ul li { 
+    list-style: none; 
+    display: inline-block; 
+    padding: 8px 12px; 
+    position: relative; 
+} 
+.nav-link ul li a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 20px; 
+} 
+ 
+.nav-link ul li a::after{ 
+    content: ''; 
+    width: 0%; 
+    height: 2px; 
+    background: #e73c2f; 
+    display: block; 
+    margin: auto; 
+    transition: 0.3s; 
+} 
+ 
+.nav-link ul li :hover::after { 
+    width: 100%; 
+}
+
+/* Headrer*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("pic/Preserve Biodiversity bb.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 70px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Style for bookmarks */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: green;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for sections */
+  h2 {
+    margin-top: 40px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+
+.browse-btns {
+	margin-top: 30px;
+	text-align: center;
+}
+.btn {
+	display: inline-flex;
+	height: 45px;
+	border: 3px solid rgba(30, 48, 25, 0.993);
+    background-color: #67a672;
+	overflow: hidden;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+.btn:hover {
+    background-color: #67a672;
+}
+.btn-text {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 14px;
+	height: 100%;
+}
+.browse-btn-anchors {
+	color: black;
+	font-family: "Poppins", Arial, sans-serif;
+	font-weight: bold;
+}
+.browse-btn-anchors:hover{
+	color: white;
+}
+
+
+  
+.content-item {
+    margin-bottom: 30px;
+    text-align: center; /* Aligns all content within the .content-item to center */
+}
+
+.content-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+}
+
+.content-item p {
+    text-align: center; /* Justify the text within paragraphs */
+}
+
+.content-item {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: rgb(3, 20, 10);
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 20px 30px 5px;
+}
+
+.footerDes {
+    text-align: center;
+    font-size: larger;
+    opacity: 0.7;
+}
+
+hr {
+    border: 0.5px solid #ffffffa8;
+}
+
+.footerNav {
+    margin: 25px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerDes p {
+    color: #fff;
+}
+
+.footerNav ul li a {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.9;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.socials {
+    font-size: large;
+}
+
+#icons {
+    background-color: 3e553aec;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.socials p{
+    color: white;
+
+}
+
+#page{
+    text-align: right;
+    text-decoration: none;
+    padding: 30px;
+    color: #9b9b9b;
+}
+
+  

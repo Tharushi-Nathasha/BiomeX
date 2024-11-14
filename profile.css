@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: url("pics/pic1.jpg");
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1110px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1075px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)}
+
+.modal-input button {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* Skip button */
+.skip {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Hover effect for buttons */
+.next:hover,
+.back:hover {
+    opacity: 0.8;
+}
+
+.skip:hover {
+    opacity: 0.9;
+}
+
+.output-text p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.output-text strong {
+    font-weight: bolder;
+    color: #000000;
+}
+
+.output-text span {
+    font-style: italic;
+    color: #666666;
+}
+
+#progressBar {
+    width: 100%;
+    height: 25px;
+    appearance: none;
+}
+
+/* Styling the progress bar */
+progress::-webkit-progress-bar {
+    background-color: #f0f0f0; 
+    border-radius: 20px;
+}
+
+/* Styling rogress bar value */
+progress::-webkit-progress-value {
+    background-color: #708471; 
+    border-radius: 20px;
+}
+
+#progressContainer {
+    margin-left: 330px;
+
+}
+
+.progress-text {
+    
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+}
+
+button {
+    font-size: medium;
+    padding: 5px;
+    background-color: #284426df;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 40px;
+    width: 60px;    
+}
+
+button:hover {
+    background-color: #687e67; 
+    
+}
+
+input[type="text"] {
+    font-size: small;
+    border-radius: px;
+    outline: ridge;
+    outline: rgb(172, 187, 172);
+    padding: 2px;
+    height: 20px;
+    width: 840px;
+    margin: 10px auto;
+
+}
+
+#feedback{
+    color: green;
+}
+
+/*header/navigation bar css*/
+ /* nav  */
+ .navbar {
+    overflow: hidden;
+    background-color: #333333cb;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo{
+    cursor: pointer;
+    height: 60px;
+    width: 135px;
+    margin-left:-50px;
+    border-radius: 10%;
+}
+
+.nav-link{
+    flex:1;
+    text-align:right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e73c2f;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-link ul li :hover::after {
+    width: 100%;
+}
+
+
+
+
+/*footer css*/
+
+footer{
+    background-color: rgb(3, 20, 10);
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 20px 30px 2px;
+}
+.footerDes{
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    opacity: 0.7;
+}
+
+hr{
+    border: 0.5px solid #ffffffa8;
+}
+
+.footerNav{
+    margin: 25px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerNav ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.9;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 2px;
+    text-align: center ;
+}
+
+.footerBottom p {
+    color: white;
+}
+.socials{
+    font-size: large;
+}
+.icons{
+    background-color: #9baa98ec;
+    padding:1px 1px 1px 1px;
+    border-radius: 5px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#pageEditor{
+    text-align: right;
+    text-decoration: none;
+    padding-top: 30px;
+    color: #9b9b9b;
+}
+
