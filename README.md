@@ -1,5 +1,5 @@
 # BiomeX
-🌍 BioMex - Life on Land 🌿
+🌍 BiomeX - Life on Land 🌿
 Project Name: BioMex
 Course: SDG 15 - Life on Land 🌱
 Technologies Used: HTML, CSS, JavaScript
